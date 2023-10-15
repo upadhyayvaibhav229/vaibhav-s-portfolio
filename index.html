@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!--=============== REMIX ICONS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Vaibhav's Mini Portfolio</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="profile container">
+    <!-- Theme button -->
+    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+    <div class="profile__container grid">
+      <div class="profile__data">
+        <div class="profile__border">
+          <div class="profile__perfil">
+            <!-- profile image -->
+            <img src="images/vaibhav.jpg" alt="">
+          </div>
+        </div>
+
+        <h2 class="profile__name">Vaibhav Upadhyay</h2>
+        <h3 class="profile__profession">Web developer</h3>
+
+        <ul class="profile__social">
+          <!-- <a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
+            <i class="ri-instagram-line"></i> -->
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" class="profile__social-link">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+          <a href="https://github.com/" target="_blank" class="profile__social-link">
+            <i class="ri-github-line"></i>
+          </a>
+        </ul>
+      </div>
+
+      <div class="profile__info grid">
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">3rd</h3>
+          <p class="profile__info-description">
+            Years of <br> BSC IT
+          </p>
+        </div>
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">4 </h3>
+          <p class="profile__info-description">
+            practice <br> projects completed <br>using HTML,CSS,JS<br>Django
+          </p>
+        </div>
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">Projects list</h3>
+
+          <ul class="projects">
+            <li>Project Manager(HTML,CSS,JS)</li>
+            <li>Portfolio(HTML,CSS,JS)</li>
+      
+            <li>Email verification(HTML,CSS,JS)</li>
+            <!-- <li>Employee management System(HTML,CSS,Django)</li> -->
+            <System>Employee management <br>System(HTML,CSS,Django)</br></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="profile__buttons">
+        <!-- My CV -->
+        <a download="" href="PDF/myresume.pdf" class="button">
+          Download CV <i class="ri-download-line"></i>
+        </a>
+
+        <div class="profile__buttons-small">
+          
+          <a href="https://api.whatsapp.com/send?phone=9004523446&text=Hello, more information!" target="_blank"
+            class="button button__small button__gray">
+            <i class="ri-whatsapp-line"></i>
+          </a>
+        
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <section class="filters container">
+      <!--=============== FILTERS TABS ===============-->
+      <ul class="filters__content">
+        <button class="filters__button filter-tab-active" data-target="#projects">
+          Projects
+        </button>
+        <button class="filters__button" data-target="#skills">
+          Skills
+        </button>
+        <button class="filters__button" data-target="#contacts">
+          Contact me
+        </button>
+      </ul>
+
+      <div class="filters__sections">
+        <!--=============== PROJECTS ===============-->
+        <div class="projects__content grid filters__active" data-content id="projects">
+          <article class="projects__card">
+            <!-- Inserting image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="images/project1_portfolio.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web</span>
+                <h3 class="projects__title">Password Manager</h3>
+                <a href="#" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="images/project2_portfolio.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web</span>
+                <h3 class="projects__title">Portfolio website</h3>
+                <a href="https://github.com/upadhyayvaibhav229/my-Portfolio" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="images/project3_portfolio.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web</span>
+                <h3 class="projects__title">Employee Management System</h3>
+                <a href="#" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="images/project4_portfolio.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web</span>
+                <h3 class="projects__title">Email verification</h3>
+                <a href="#" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          
+
+         
+
+        </div>
+
+
+
+        <!--=============== SKILLS ===============-->
+        <div class="skills__content grid" data-content id="skills">
+          <div class="skills__area">
+            <h3 class="skills__title">Frontend Developer</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="skills__group">
+              <div class="skills__data">
+                <i class="ri-checkbox-circle-line"></i>
+
+                <div>
+                  <h3 class="skills__name">Bootstrap</h3>
+                  <span class="skills__level">Basic</span>
+                </div>
+              </div>
+
+                <!-- <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div> -->
+                
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__area">
+            <h3 class="skills__title">Backend Developer</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Django</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">MySQL</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+
+              </div>
+              
+              <div class="skills__data">
+                <i class="ri-checkbox-circle-line"></i>
+
+                <div>
+                  <h3 class="skills__name">Python</h3>
+                  <span class="skills__level">Intermediate</span>
+                </div>
+              </div>
+
+              
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="Contacts grid" data-content id="contacts">
+          <div class="contactform">
+            <h1>Contact me</h1>
+            <form>
+              <div class="form-group">
+                <label for="clientname">Name</label>
+                <input type="Name" class="form-control" id="clientemail" aria-describedby="emailHelp"
+                  placeholder="Enter name">
+              </div>
+  
+              <div class="form-group">
+                <label for="clientphone">phone</label>
+                <input type="phone" class="form-control" id="clientphone" placeholder="phone number">
+            </div>
+  
+              <div class="form-group">
+                <label for="clientemail">Email address</label>
+                <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                
+              </div>
+              <button type="submit" id="button"class="btn btn-sm">Submit</button>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <span class="footer__copy">
+      &#169; CodeJS. All rigths reserved
+    </span>
+  </footer>
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="script.js"></script>
+</body>
+
+</html>
